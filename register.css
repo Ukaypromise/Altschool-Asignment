@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Styling hompage Comntainer */
+.wrapper {
+  min-height: 80vh;
+  width: 100%;
+  background: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(./images/background.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  padding: 1em;
+  position: absolute;
+}
+
+/* Styling Navbar */
+nav {
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: rgb(27 20 41);
+  position: relative;
+}
+.logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+nav img {
+  width: 200px;
+}
+nav h1 {
+  color: white;
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+.nav-links ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+}
+.nav-links ul li::after {
+  content: "";
+  width: 0%;
+  height: 5px;
+  background: rgba(168, 4, 209, 0.459);
+  display: block;
+  transition: 0.5s;
+  margin: auto;
+}
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+.hero-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 12px 34px;
+  font-size: 18px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+.hero-btn:hover {
+  border: 1px solid rgba(119, 53, 136, 0.459);
+  background-color: rgba(119, 53, 136, 0.459);
+  transition: 0.5s;
+}
+.contact-container {
+  width: 60%;
+  height: 100%;
+  border-radius: 5px;
+  padding: 20px;
+  background: white;
+  background: linear-gradient(to left, rgb(27 20 41), rgb(20 15 35));
+  border-radius: 2rem;
+  z-index: 2;
+  backdrop-filter: blur(2rem);
+}
+.head {
+  width: 100%;
+  text-align: center;
+}
+h1 {
+  color: white;
+}
+p {
+  color: white;
+}
+.contact-links {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
+.contact-links img {
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+}
+
+/* Form Field */
+
+label {
+  color: white;
+}
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  resize: vertical;
+}
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  resize: vertical;
+}
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  resize: vertical;
+}
+input[type="text"]:active {
+  border: none;
+  outline: none;
+}
+
+input[type="submit"] {
+  background-color: #426696;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: rgba(119, 53, 136, 0.459);
+}

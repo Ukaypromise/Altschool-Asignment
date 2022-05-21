@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./login.css" />
+    <title>Login</title>
+  </head>
+  <body>
+    <nav>
+      <img class="logo" src="./images/background.jpg" alt="logo" />
+      <h1>Dev Promise</h1>
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times-circle"></i>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="contact.html">CONTACTS</a></li>
+          <li><a href="register.html">REGISTER</a></li>
+          <li><a href="login.html">LOGIN</a></li>
+          <li><a href="calculator.html">CALCULATOR</a></li>
+        </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <div class="wrapper">
+      <div class="contact-container">
+        <div class="head">
+          <h1>Login</h1>
+        </div>
+        <div class="container">
+          <section class="glass">
+            <form action="submit">
+              <label for="username">Username</label>
+              <input
+                type="text"
+                id="username"
+                name="username"
+                placeholder="Your Username.."
+              />
+              <label for="password">Password</label>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Your password.."
+              />
+
+              <input type="submit" value="Submit" />
+            </form>
+          </section>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

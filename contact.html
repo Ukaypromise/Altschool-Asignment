@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./contact.css" />
+    <title>Contact Me</title>
+  </head>
+  <body>
+    <nav>
+      <img class="logo" src="./images/background.jpg" alt="logo" />
+      <h1>Dev Promise</h1>
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times-circle"></i>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="contact.html">CONTACTS</a></li>
+          <li><a href="register.html">REGISTER</a></li>
+          <li><a href="login.html">LOGIN</a></li>
+          <li><a href="calculator.html">CALCULATOR</a></li>
+        </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <div class="wrapper">
+      <div class="contact-container">
+        <div class="head">
+          <h1>Get In touch</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="contant-info">
+          <div class="contact-links">
+            <img src="./images/location-dot-solid.svg" alt="" />
+            <p>Port Harcourt City</p>
+          </div>
+          <div class="contact-links">
+            <img src="./images/phone-solid.svg" alt="" />
+            <p>+234 07064505393</p>
+          </div>
+          <div class="contact-links">
+            <img src="./images/envelope-circle-check-solid.svg" alt="" />
+            <p>promiseukaimo@gmail.com</p>
+          </div>
+        </div>
+        <div class="container">
+          <section class="glass">
+            <form action="submit">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your Name.."
+              />
+
+              <label for="email">Email</label>
+              <input
+                type="text"
+                id="email"
+                name="lastname"
+                placeholder="Your Email.."
+              />
+
+              <label for="priorities">Priority</label>
+              <select id="priorities" name="priorities">
+                <option value=""></option>
+                <option value="later">Later</option>
+                <option value="Urgent">Urgent</option>
+                <option value="now">Now</option>
+              </select>
+
+              <label for="subject">Subject</label>
+              <textarea
+                id="subject"
+                name="subject"
+                placeholder="Write something.."
+                style="height: 50px"
+              ></textarea>
+              <input type="submit" value="Submit" />
+            </form>
+          </section>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
